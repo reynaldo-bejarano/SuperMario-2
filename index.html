@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="javascript/app.js" defer></script>
+  <title>Super Mario</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header class="bg-gray-800">
+    <div class="w-11/12 lg:container mx-auto flex justify-between lg:justify-start items-center">
+      <div class="flex-initial lg:w-2/6 p-2 ">
+        <img class="w-16 lg:w-24" src="img/logo.png" alt="logo" />
+      </div>
+      <nav>
+        <!-- lg -->
+        <div class="lg:block hidden items-center">
+          <ul class="flex items-center justify-center gap-5">
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500">Home</a></li>
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500">Play together</a></li>
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500">Explore</a></li>
+            <li>
+              <a href="#" class="text-white block p-2 font-bold hover:text-yellow-500 
+                rounded-full border-4 border-amber-300 align-middle transition duration-500 
+                hover:bg-white hover:text-black">Bowser's
+                Fury</a>
+            </li>
+            <li>
+              <a href="#" class="text-white block px-4 py-3 font-bold hover:text-yellow-500 
+                rounded-full bg-red-700 transition  duration-500 hover:bg-white hover:text-black ">Buy
+                Now</a>
+            </li>
+          </ul>
+        </div>
+        <!-- movil -->
+        <div class="lg:hidden block">
+          <a href="#" class="text-white block p-5 font-bold hover:text-yellow-500" id="mobile-menu">Menu</a>
+          <ul class="w-full h-1/2 rounded-b-lg absolute left-0 top-14 z-50 text-center bg-gray-800 hidden"
+            id="show-menu">
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500" id="mobile-link">Home</a></li>
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500" id="mobile-link">Play
+                together</a></li>
+            <li><a href="#" class="text-white block p-5 font-bold hover:text-yellow-500" id="mobile-link">Explore</a>
+            </li>
+            <li>
+              <a href="#" class="text-white inline-block p-2 my-4 font-bold hover:text-yellow-500 
+                rounded-full border-4 border-amber-300 align-middle transition duration-500 
+                hover:bg-white hover:text-black" id="mobile-link">Browser
+                Fury</a>
+            </li>
+            <li>
+              <a href="#" class="text-white inline-block px-4 py-3 my-4 font-bold hover:text-yellow-500 
+                rounded-full bg-red-700 transition  duration-500 hover:bg-white hover:text-black " id="mobile-link">Buy
+                Now</a>
+            </li>
+          </ul>
+        </div>
+        <!-- nav close -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- bg hero -->
+  <section>
+    <img src="img/hero.jpg" alt="hero-banner">
+  </section>
+
+  <!-- Buttons center -->
+  <section>
+    <div class="h-6 bg-repeat-x relative -top-2" style="background-image: url(img/wave-white.png)"></div>
+    <div class="flex items-center justify-center flex-wrap gap-5 p-4"
+      style="background-image: url(img/pattern-white-dots.png)">
+      <button class="w-full lg:w-auto bg-black text-white py-3 px-16 rounded-3xl text-2xl 
+        inline-block font-bold border-transparent border-8 text-2xl rounded-3xl 
+        hover:border-gray-200 hover:bg-white hover:text-black transition duration-200">Buy
+        Now</button>
+      <button class="w-full lg:w-auto bg-red-500 text-white py-3 px-16 rounded-3xl text-2xl 
+        inline-block font-bold border-transparent border-8 text-2xl rounded-3xl 
+        hover:border-gray-200 hover:bg-white hover:text-black transition duration-200">Watch
+        the Trailer</button>
+    </div>
+    <div class="h-6 bg-repeat-x relative top-2" style="background-image: url(img/wave-white.png)"></div>
+  </section>
+
+  <!-- Section videos -->
+  <section class="py-28" style="background-image: url(img/pattern-characters-red.png)">
+    <!-- flex -->
+    <div class="w-10/12 md:container mx-auto md:flex md:gap-5">
+      <!-- first div -->
+      <div class="md:basis-full md:relative">
+        <img class="w-full" src="img/character-l.png" alt="character-l">
+        <!-- card -->
+        <div class="card rounded-3xl bg-white lg:w-10/12 xl:w-9/12 mx-auto lg:absolute 
+        lg:top-1/2 lg:inset-x-0">
+          <!-- video -->
+          <div class="bg-black rounded-3xl">
+            <video class="rounded-t-3xl" src="videos/video01.mp4" autoplay muted loop></video>
+          </div>
+          <div class="h-6 bg-repeat-x relative -top-3" style="background-image: url(img/wave-white.png)"></div>
+          <!-- box -->
+          <div class="text-center">
+            <h1 class="font-black text-4xl py-10">Play together</h1>
+            <p class="text-xl">Work with (or against) your friends and family</p>
+            <a href="#" class="xl:text-2xl my-4 inline-block py-2 px-16 bg-red-500 text-white 
+              font-black border-transparent border-8 rounded-3xl hover:border-gray-200 
+              hover:bg-white hover:text-black transition duration-200 group">Watch
+              the trailer</a>
+          </div>
+          <!-- dots -->
+          <div class="flex justify-between p-4">
+            <div class="h-3 w-3 bg-gray-600 rounded-full"></div>
+            <div class="h-3 w-3 bg-gray-600 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- second div -->
+      <div class="md:basis-full">
+        <!-- data -->
+        <div class="text-center text-white ">
+          <h2 class="text-6xl font-bold p-10">Available Now</h2>
+          <p class="text-2xl font-bold p-10">Bowser’s Fury blew me away and might be one of my favorite 3D Mario
+            experiences ever.</p>
+          <h3 class="text-4xl font-bold p-8">Team up for a paws-itively adorable adventure!</h3>
+          <p class="text-1xl p-10">Bowser is up to his old tricks again and only Mario and his friends can save the day!
+            Use power-ups like the Super Bell, which grants catlike abilities like climbing and scratching, to overcome
+            Bowser and his minions.</p>
+        </div>
+        <!-- card -->
+        <div class="card rounded-3xl bg-white lg:w-10/12 xl:w-9/12 mx-auto">
+          <!-- video -->
+          <div class="cover bg-black rounded-3xl">
+            <video class="rounded-t-3xl" src="videos/video02.mp4" autoplay muted loop></video>
+          </div>
+          <!-- wave -->
+          <div class="h-6 bg-repeat-x relative -top-3" style="background-image: url(img/wave-white.png)"></div>
+          <!-- box -->
+          <div class="text-center">
+            <h1 class="font-black text-4xl py-10">Explore</h1>
+            <p class="text-xl">Prowl through some popular places.</p>
+            <a href="#" class="xl:text-2xl my-4 inline-block py-2 px-16 bg-red-500 text-white 
+              font-black border-transparent border-8 rounded-3xl hover:border-gray-200 
+              hover:bg-white hover:text-black transition duration-200 group">Take
+              a look!</a>
+          </div>
+          <!-- dots -->
+          <div class="flex justify-between p-4">
+            <div class="h-3 w-3 bg-gray-600 rounded-full"></div>
+            <div class="h-3 w-3 bg-gray-600 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- flex -->
+    </div>
+
+    <!-- coins -->
+    <div class="text-center flex justify-center gap-9 pt-20">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px]">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] hidden sm:block">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] hidden sm:block">
+      <img src="img/coin.gif" alt="coin" class="w-[50px] h-[50px] sm:w-[80px] sm:h-[80px] hidden sm:block">
+    </div>
+
+
+  </section>
+
+  <!-- section Bowser -->
+
+  <section>
+    <!-- wave -->
+    <div class=" h-6 bg-transparent 
+    bg-repeat-x relative -top-3" style="background-image: url(img/wave-white.png);">
+    </div>
+
+    <!-- bg -->
+    <div class="bg-no-repeat bg-cover" style="background-image: url(img/background.jpg);">
+      <!-- bg dots -->
+      <div class="z-50  bg-transparent bg-repeat" style="background-image: url(img/dot_pattern.png);">
+        <!-- box -->
+        <div class="w-full md:w-10/12 px-5 mx-auto text-center ">
+          <!-- flex -->
+          <div class="md:flex md:justify-between md:items-center z-50">
+            <!-- bowser fury -->
+            <img class="w-8/12 md:w-5/12 lg:w-4/12 mx-auto md:mx-0" src="img/logo-m-2x.png" alt="fury-logo">
+            <!-- data -->
+            <div class="md:w-6/12 lg:w-4/12">
+              <h3 class="text-2xl md:text-3xl text-white font-bold py-5">Get a sneak peek at the action-packed addition
+                to the game!
+              </h3>
+              <a href="#" class="bg-red-500 inline-block my-4 px-16 py-2 text-white font-bold 
+              text-xl rounded-2xl border-4 border-red-500 hover:bg-white hover:border-gray-200 
+              hover:text-black transition duration-200">
+                See more
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <img src="img/bowser.png" alt="bowser">
+          </div>
+        </div>
+      </div>
+      <!-- bowser -->
+    </div>
+  </section>
+
+
+  <!-- Section amiboo-->
+  <section class="pb-5" style="background-image: url(img/pattern-characters-white.png);">
+    <div class="h-6 bg-repeat-x relative -top-3" style="background-image: url(img/arrow-blue.png);"></div>
+    <!-- container -->
+    <div class="w-11/12 lg:w-10/12 2xl:w-8/12 mx-auto pt-10 md:flex md:justify-center md:items-center">
+      <!-- first div -->
+      <div class="p-3 rounded-md md:basis-full" style="background-image: url(img/pattern-red-dots.png);">
+        <!-- circles -->
+        <div class="flex justify-between items-center">
+          <div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
+          <div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
+        </div>
+        <!-- card-->
+        <div class="text-center">
+          <img class="mx-auto" src="img/my-nintendo-logo.svg" alt="Nintendo-logo">
+          <h3 class="font-bold text-2xl md:text-4xl  p-5 lg:px-20 text-white">Can you find the 5
+            hidden stickers?</h3>
+          <div class="flex flex-wrap justify-center items-center gap-2">
+            <img src="img/sticker-cat_mario.png" alt="mario-sticker">
+            <img src="img/sticker-cat_peach.png" alt="peach-sticker">
+            <img src="img/sticker-luigi.png" alt="mario-sticker">
+            <img src="img/sticker-toad.png" alt="mario-sticker">
+            <img src="img/sticker-super_bell.png" alt="mario-sticker">
+          </div>
+          <p class="text-white font-bold text-xl py-5 lg:px-20">Earn 100 My Nintendo Platinum Points
+            if you find them all!</p>
+          <p class="text-white text-sm lg:px-10 ">A Nintendo Account is required to receive and redeem My Nintendo
+            points. <a class="underline" href="#">Terms apply.</a> </p>
+
+          <a href="#" class="bg-gray-900 inline-block my-4 px-8 py-2 text-white text-2xl 
+            font-bold rounded-xl border-8 border-gray-900 hover:bg-white hover:border-gray-200
+             hover:text-black transition duration-200">
+            Sign in
+          </a>
+        </div>
+
+        <!-- circles -->
+        <div class="flex justify-between items-center">
+          <div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
+          <div class="h-3 w-3 bg-yellow-500 rounded-full"></div>
+        </div>
+
+      </div>
+      <!-- second div -->
+      <div class="text-center p-3 md:basis-full">
+        <h3 class="font-bold text-2xl md:text-4xl py-5">Even more fun with amiibo</h3>
+        <div class="relative lg:w-6/12  mx-auto">
+          <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 266 264">
+            <path fill="#ffcc00" fill-rule="evenodd"
+              d="M265.795 132c0 4.544-8.22 8.618-8.68 13.042-.469 4.51 6.728 10.193 5.807 14.551-.936 4.429-9.824 6.705-11.204 10.952-1.395 4.296 4.456 11.36 2.634 15.445-1.838 4.118-11.005 4.487-13.247 8.361-2.253 3.9 1.994 12.029-.645 15.655-2.645 3.635-11.69 2.093-14.694 5.428-3.006 3.34-.533 12.173-3.87 15.182-3.336 3.004-11.863-.375-15.5 2.272-3.623 2.638-3.032 11.795-6.927 14.048-3.878 2.243-11.516-2.833-15.633-.995-4.083 1.818-5.412 10.9-9.708 12.293-4.244 1.379-10.65-5.183-15.077-4.245-4.358.92-7.556 9.523-12.064 9.991-4.422.46-9.324-7.293-13.868-7.293-4.542 0-9.446 7.753-13.867 7.293-4.509-.468-7.707-9.07-12.066-9.991-4.424-.938-10.834 5.624-15.078 4.245-4.296-1.395-5.625-10.475-9.71-12.295-4.116-1.838-11.755 3.238-15.63.996-3.9-2.256-3.306-11.413-6.932-14.05-3.636-2.648-12.164.732-15.497-2.275-3.338-3.009-.862-11.842-3.87-15.18-3.005-3.334-12.05-1.792-14.694-5.428-2.638-3.626 1.611-11.755-.646-15.654-2.24-3.875-11.407-4.244-13.244-8.361-1.819-4.086 4.03-11.148 2.635-15.444-1.38-4.245-10.267-6.523-11.202-10.95-.922-4.358 6.276-10.042 5.807-14.55-.461-4.425-8.681-8.5-8.681-13.044 0-4.543 8.22-8.619 8.681-13.041.469-4.51-6.73-10.193-5.807-14.551.935-4.429 9.822-6.707 11.202-10.952 1.395-4.296-4.454-11.36-2.633-15.445 1.837-4.118 11.004-4.487 13.246-8.363 2.255-3.897-1.994-12.029.645-15.655 2.645-3.635 11.69-2.091 14.694-5.426 3.006-3.34.533-12.175 3.87-15.182 3.336-3.004 11.863.375 15.5-2.272 3.625-2.638 3.03-11.795 6.929-14.048 3.876-2.245 11.514 2.833 15.631.995 4.083-1.82 5.412-10.9 9.708-12.293 4.244-1.38 10.652 5.18 15.077 4.245 4.36-.923 7.556-9.523 12.065-9.991 4.421-.46 9.325 7.291 13.867 7.291 4.544 0 9.446-7.75 13.868-7.291 4.508.468 7.708 9.068 12.066 9.991 4.425.938 10.833-5.625 15.077-4.245 4.296 1.395 5.625 10.475 9.71 12.295 4.116 1.838 11.755-3.24 15.633-.996 3.896 2.256 3.303 11.411 6.929 14.05 3.637 2.648 12.164-.732 15.5 2.273 3.335 3.009.861 11.842 3.868 15.182 3.004 3.334 12.049 1.792 14.693 5.428 2.638 3.626-1.61 11.753.646 15.652 2.24 3.877 11.407 4.246 13.244 8.363 1.82 4.084-4.03 11.148-2.635 15.444 1.38 4.245 10.268 6.521 11.204 10.95.92 4.358-6.276 10.042-5.807 14.55.46 4.423 8.68 8.5 8.68 13.042">
+            </path>
+          </svg>
+          <div class="absolute left-auto top-1/4 z-50">
+            <img src="img/cat-peach.png" alt="cat-peach">
+          </div>
+          <div class="absolute top-0 right-0">
+            <img src="img/cat-mario.png" alt="cat-mario">
+          </div>
+        </div>
+        <p class="py-5 md:text-xl">
+          Use the adorable new Cat Mario and Cat Peach amiibo™ figures
+          to unlock power-ups and other in-game enhancements.
+        </p>
+      </div>
+    </div>
+    <div class="hidden md:block py-10 h-[400px] w-8/12 mx-auto">
+      <div class="flex justify-between items-center gap-10">
+        <img src="img/peach.png" alt="peach">
+        <img src="img/luigi.png" alt="luigi">
+        <img src="img/cat_mario.png" alt="cat">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section yellow dots -->
+  <section class="" style="background-image: url(img/pattern-yellow-dots.png);">
+    <div class="h-6 bg-repeat-x relative -top-4" style="background-image: url(img/wave-pink.png);"></div>
+    <div class="container md:flex md:justify-center md:items-center mx-auto">
+      <div class=" text-center p-5 ">
+        <h3 class="font-bold text-4xl p-5 text-yellow-900">Cat
+          Transformation
+          Center</h3>
+        <p class="text-xl my-4 text-black">We’re not kitten—transform into a cat-tastic new you!</p>
+        <a class="inline-block font-bold bg-red-500 my-4 px-20 py-4 rounded-full border-8 hover:text-black hover:border-gray-200 hover:bg-white"
+          href="#">Meow!</a>
+      </div>
+      <div>
+        <img src="img/activity_img3.png" alt="activity_img3">
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-black ">
+    <div class="h-6 bg-repeat-x relative -top-2" style="background-image: url(img/wave-white.png);"></div>
+    <div class="container mx-auto text-center py-10 md:w-2/3">
+      <a class="bg-red-500  inline-block px-16 py-4 text-white text-2xl font-bold rounded-3xl border-8 hover:bg-white hover:border-gray-200 hover:text-black"
+        href="#">Customer Support</a>
+      <div class="py-5 text-white">
+
+        <p class="text-1xl p-2">©2013-2021 Nintendo. Super Mario and Nintendo Switch are trademarks of Nintendo.</p>
+        <p class="text-1xl p-2">Built by Reynaldo Bejarano Sánchez</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
